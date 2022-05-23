@@ -1,0 +1,32 @@
+.login{
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+.form{
+  background-color: var(--grey);
+  border-radius: 10px;
+  width: 400px;
+  padding: 1em;
+}
+.form > h3 {
+  text-align: center;
+  color: var(--red);
+}
+.form > .input{
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+}
+.form > .input > label{
+  color: var(--red);
+  font-size: 1.2em;
+}
+.form > .input > input{
+  padding: .5em;
+}
+.form > .button > button{
+  background-color: var(--red);
+}

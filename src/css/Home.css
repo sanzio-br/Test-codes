@@ -1,0 +1,168 @@
+.banner_main {
+    background: url(../pages/Kalbo-Adventures-Karuru-Experience-2021-37.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    color-scheme: var(--gray) !important;
+}
+
+.banner_main::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+.banner_main > .container{
+    z-index: 10;
+}
+
+.text-bg {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.text-bg h1 {
+    color: var(--red);
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-bg span {
+    color: var(--red);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.text-bg p {
+    color: var(--red);
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.text-bg a {
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    border-radius: 10px;
+    text-decoration: none !important;
+}
+
+.text-bg a:hover {
+    background-color: var(--red);
+    color: #fff;
+    transition: ease-in all 0.5s;
+    border-radius: 25px
+}
+
+.titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    font-size: 55px;
+    color: #313131;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .titlepage h2 {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-bg h1 {
+        padding-top: 0px;
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .text-bg span {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .banner_main {
+        min-height: 600px;
+    }
+
+    .titlepage h2 {
+        font-size: 31px;
+        line-height: 37px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .text-bg h1 {
+        font-size: 33px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+
+    .sign_btn {
+        padding-left: 0;
+    }
+
+    .text-bg span {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .titlepage h2 {
+        font-size: 34px;
+        line-height: 41px;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-bg h1 {
+        font-size: 26px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+
+    .sign_btn {
+        padding-left: 0;
+    }
+
+    .text-bg span {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}

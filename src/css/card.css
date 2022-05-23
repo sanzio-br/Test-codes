@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wakanda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-container{
+    font-family: 'Nunito', sans-serif;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: var(--gray);
+}
+.card-container > .eventCard{
+    background-color: var(--grey);
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.card-container > .eventCard:hover{
+    box-shadow: 0 30px 30px rgba(0,0,0,0.4);
+}
+.card-container > .eventCard > .imgBox{
+    width: 100%;
+    height: 45%;
+}
+.card-container > .eventCard > .imgBox > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-container > .eventCard > .card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .5em 1.5em;
+}
+.card-container > .eventCard > .card-details > span{
+    margin-bottom: 2px;
+    color: #a9a9a9;
+    font-size: 17px;
+}
+.card-container > .eventCard > .card-details > p{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--red);
+}
+.card-container > .eventCard > .card-details > button{
+    border: none;
+    background: var(--red);
+    color: #ffff;
+    font-weight: 600;
+    padding:7px 15px;
+    border-radius: 2em;
+    margin-top: .5em ;
+}

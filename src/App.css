@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+	--red:#e24a1b;
+	--grey:#424242;
+	--gray:#333333;
+}
+a:hover, a:focus , a.active{
+  color:var(--red) !important;
+}
+a.active::after{
+  width: 100% !important; 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
+section {
+  background: var(--grey) !important;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-weight: 400;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+form{
+  width: 400px;
+  background-color: var(--gray);
+  padding: 2em 1em;
+  color: var(--red);
+  border-radius: 1.3em;
+}
+.input-group{
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+} 
+.input-group > input{
+  padding: .5em;
+  width: 100% !important;
+}
+.input-group  > label{
+  background-color: var(--gray);
+  font-weight: 600;
 }
